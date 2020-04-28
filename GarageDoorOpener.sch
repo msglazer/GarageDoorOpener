@@ -1,0 +1,333 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Global_Parts:RAC15-05SK U?
+U 1 1 5EA7D11F
+P 2600 1600
+F 0 "U?" H 2600 1800 50  0000 C CNN
+F 1 "RAC15-05SK" H 2600 1709 50  0000 C CNN
+F 2 "" H 2600 1825 50  0001 C CNN
+F 3 "" H 2600 1825 50  0001 C CNN
+	1    2600 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L conn:Conn_01x02 J?
+U 1 1 5EA7D83E
+P 1375 1775
+F 0 "J?" H 1293 1450 50  0000 C CNN
+F 1 "Conn_01x02" H 1293 1541 50  0000 C CNN
+F 2 "" H 1375 1775 50  0001 C CNN
+F 3 "~" H 1375 1775 50  0001 C CNN
+	1    1375 1775
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1575 1675 2000 1675
+Wire Wire Line
+	2000 1675 2000 1625
+Wire Wire Line
+	2000 1625 2200 1625
+Wire Wire Line
+	2200 1825 2000 1825
+Wire Wire Line
+	2000 1825 2000 1775
+Wire Wire Line
+	2000 1775 1575 1775
+Text Notes 1000 2050 0    50   ~ 0
+NOTE: MAINTAIN XXmm DISTANCE BETWEEN AC TRACES
+$Comp
+L power:GND #PWR?
+U 1 1 5EA7E9BB
+P 3250 2175
+F 0 "#PWR?" H 3250 1925 50  0001 C CNN
+F 1 "GND" H 3255 2002 50  0000 C CNN
+F 2 "" H 3250 2175 50  0001 C CNN
+F 3 "" H 3250 2175 50  0001 C CNN
+	1    3250 2175
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3000 1825 3250 1825
+Wire Wire Line
+	3250 1825 3250 2100
+Wire Wire Line
+	3000 1625 3550 1625
+Wire Wire Line
+	4425 1625 4425 1475
+$Comp
+L power:+5V #PWR?
+U 1 1 5EA80065
+P 4425 1475
+F 0 "#PWR?" H 4425 1325 50  0001 C CNN
+F 1 "+5V" H 4440 1648 50  0000 C CNN
+F 2 "" H 4425 1475 50  0001 C CNN
+F 3 "" H 4425 1475 50  0001 C CNN
+	1    4425 1475
+	1    0    0    -1  
+$EndComp
+$Comp
+L device:C C?
+U 1 1 5EA80537
+P 3550 1875
+F 0 "C?" H 3575 1950 50  0000 L CNN
+F 1 "47uF" H 3575 1775 50  0000 L CNN
+F 2 "" H 3588 1725 50  0001 C CNN
+F 3 "~" H 3550 1875 50  0001 C CNN
+	1    3550 1875
+	1    0    0    -1  
+$EndComp
+$Comp
+L device:C C?
+U 1 1 5EA8195E
+P 3900 1875
+F 0 "C?" H 3925 1950 50  0000 L CNN
+F 1 "47uF" H 3925 1775 50  0000 L CNN
+F 2 "" H 3938 1725 50  0001 C CNN
+F 3 "~" H 3900 1875 50  0001 C CNN
+	1    3900 1875
+	1    0    0    -1  
+$EndComp
+$Comp
+L device:C C?
+U 1 1 5EA81F80
+P 4250 1875
+F 0 "C?" H 4275 1950 50  0000 L CNN
+F 1 "47uF" H 4275 1775 50  0000 L CNN
+F 2 "" H 4288 1725 50  0001 C CNN
+F 3 "~" H 4250 1875 50  0001 C CNN
+	1    4250 1875
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3550 2025 3550 2100
+Wire Wire Line
+	3550 2100 3250 2100
+Connection ~ 3250 2100
+Wire Wire Line
+	3250 2100 3250 2175
+Wire Wire Line
+	3550 2100 3900 2100
+Wire Wire Line
+	4250 2100 4250 2025
+Connection ~ 3550 2100
+Wire Wire Line
+	3900 2025 3900 2100
+Connection ~ 3900 2100
+Wire Wire Line
+	3900 2100 4250 2100
+Wire Wire Line
+	4250 1725 4250 1625
+Connection ~ 4250 1625
+Wire Wire Line
+	4250 1625 4425 1625
+Wire Wire Line
+	3900 1725 3900 1625
+Connection ~ 3900 1625
+Wire Wire Line
+	3900 1625 4250 1625
+Wire Wire Line
+	3550 1725 3550 1625
+Connection ~ 3550 1625
+Wire Wire Line
+	3550 1625 3900 1625
+Wire Notes Line
+	4875 950  4875 2525
+Wire Notes Line
+	4875 2525 700  2525
+Wire Notes Line
+	700  2525 700  950 
+Wire Notes Line
+	700  950  4875 950 
+Text Notes 2175 1150 0    50   ~ 0
+120V to 5V AC-DC Converter
+$Comp
+L Global_Parts:PhotonBoron U?
+U 1 1 5EA8452B
+P 7200 2225
+F 0 "U?" H 7212 3215 50  0000 C CNN
+F 1 "Argon/Boron" H 7212 3124 50  0000 C CNN
+F 2 "MODULE" H 7200 1300 50  0001 C CNN
+F 3 "DOCUMENTATION" H 7025 1200 50  0001 C CNN
+	1    7200 2225
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5EA86BDC
+P 5825 3175
+F 0 "#PWR?" H 5825 2925 50  0001 C CNN
+F 1 "GND" H 5830 3002 50  0000 C CNN
+F 2 "" H 5825 3175 50  0001 C CNN
+F 3 "" H 5825 3175 50  0001 C CNN
+	1    5825 3175
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5825 3175 5825 1875
+Wire Wire Line
+	5825 1875 5925 1875
+NoConn ~ 8500 2800
+Text HLabel 9025 1900 2    50   Input ~ 0
+RELAY_CTRL
+Wire Wire Line
+	9025 1900 8500 1900
+Text HLabel 9025 2000 2    50   Input ~ 0
+REED_SW1
+Wire Wire Line
+	9025 2000 8500 2000
+Text HLabel 9025 2100 2    50   Input ~ 0
+REED_SW2
+Wire Wire Line
+	9025 2100 8500 2100
+$Comp
+L power:+5V #PWR?
+U 1 1 5EA8B903
+P 8850 1475
+F 0 "#PWR?" H 8850 1325 50  0001 C CNN
+F 1 "+5V" H 8865 1648 50  0000 C CNN
+F 2 "" H 8850 1475 50  0001 C CNN
+F 3 "" H 8850 1475 50  0001 C CNN
+	1    8850 1475
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8850 1475 8850 1800
+Wire Wire Line
+	8850 1800 8500 1800
+$Comp
+L Device:C C?
+U 1 1 5EA8F259
+P 9975 1750
+F 0 "C?" H 10090 1796 50  0000 L CNN
+F 1 "1uF" H 10090 1705 50  0000 L CNN
+F 2 "" H 10013 1600 50  0001 C CNN
+F 3 "~" H 9975 1750 50  0001 C CNN
+	1    9975 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5EA8FA46
+P 9975 1475
+F 0 "#PWR?" H 9975 1325 50  0001 C CNN
+F 1 "+5V" H 9990 1648 50  0000 C CNN
+F 2 "" H 9975 1475 50  0001 C CNN
+F 3 "" H 9975 1475 50  0001 C CNN
+	1    9975 1475
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9975 1475 9975 1600
+$Comp
+L power:GND #PWR?
+U 1 1 5EA90531
+P 9975 2050
+F 0 "#PWR?" H 9975 1800 50  0001 C CNN
+F 1 "GND" H 9980 1877 50  0000 C CNN
+F 2 "" H 9975 2050 50  0001 C CNN
+F 3 "" H 9975 2050 50  0001 C CNN
+	1    9975 2050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9975 2050 9975 1900
+Text HLabel 9025 2200 2    50   Input ~ 0
+CONNECTIVITY_LED
+Text HLabel 9025 2300 2    50   Input ~ 0
+STATUS_LED
+Wire Wire Line
+	9025 2300 8500 2300
+Wire Wire Line
+	8500 2200 9025 2200
+Wire Notes Line
+	10550 3425 10550 925 
+Wire Notes Line
+	10550 925  5375 925 
+Wire Notes Line
+	5375 925  5375 3425
+Wire Notes Line
+	5375 3425 10550 3425
+Text Notes 7525 1100 0    50   ~ 0
+Network Connected Microcontroller
+$Comp
+L conn:Conn_01x02 J?
+U 1 1 5EA990EC
+P 9825 3975
+F 0 "J?" H 9905 3967 50  0000 L CNN
+F 1 "Conn_01x02" H 9905 3876 50  0000 L CNN
+F 2 "" H 9825 3975 50  0001 C CNN
+F 3 "~" H 9825 3975 50  0001 C CNN
+	1    9825 3975
+	1    0    0    -1  
+$EndComp
+$Comp
+L conn:Conn_01x02 J?
+U 1 1 5EA99BCA
+P 9825 4550
+F 0 "J?" H 9905 4542 50  0000 L CNN
+F 1 "Conn_01x02" H 9905 4451 50  0000 L CNN
+F 2 "" H 9825 4550 50  0001 C CNN
+F 3 "~" H 9825 4550 50  0001 C CNN
+	1    9825 4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L conn:Conn_01x02 J?
+U 1 1 5EA99FF9
+P 9825 5100
+F 0 "J?" H 9905 5092 50  0000 L CNN
+F 1 "Conn_01x02" H 9905 5001 50  0000 L CNN
+F 2 "" H 9825 5100 50  0001 C CNN
+F 3 "~" H 9825 5100 50  0001 C CNN
+	1    9825 5100
+	1    0    0    -1  
+$EndComp
+Text Notes 9725 3800 0    50   ~ 0
+RELAY
+Text Notes 9650 4375 0    50   ~ 0
+REED SW1
+Text Notes 9625 4950 0    50   ~ 0
+REED SW2
+Text HLabel 9400 4550 0    50   Input ~ 0
+REED_SW1_IN
+Text HLabel 9400 5100 0    50   Input ~ 0
+REED_SW2_IN
+Wire Wire Line
+	9400 4550 9625 4550
+Wire Wire Line
+	9625 5100 9400 5100
+$Comp
+L power:GND #PWR?
+U 1 1 5EA9BA32
+P 9525 5325
+F 0 "#PWR?" H 9525 5075 50  0001 C CNN
+F 1 "GND" H 9530 5152 50  0000 C CNN
+F 2 "" H 9525 5325 50  0001 C CNN
+F 3 "" H 9525 5325 50  0001 C CNN
+	1    9525 5325
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9525 5325 9525 5200
+Wire Wire Line
+	9525 5200 9625 5200
+Wire Wire Line
+	9625 4650 9525 4650
+Wire Wire Line
+	9525 4650 9525 5200
+Connection ~ 9525 5200
+$EndSCHEMATC
