@@ -1,0 +1,294 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 3 3
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L conn:Conn_01x02 J?
+U 1 1 5EB16D48
+P 4675 3175
+AR Path="/5EB16D48" Ref="J?"  Part="1" 
+AR Path="/5EB107FD/5EB16D48" Ref="J6"  Part="1" 
+F 0 "J6" H 4755 3167 50  0000 L CNN
+F 1 "Conn_01x02" H 4755 3076 50  0000 L CNN
+F 2 "Connector_JST:JST_PH_S2B-PH-K_1x02_P2.00mm_Horizontal" H 4675 3175 50  0001 C CNN
+F 3 "~" H 4675 3175 50  0001 C CNN
+	1    4675 3175
+	1    0    0    -1  
+$EndComp
+Text Notes 4575 3000 0    50   ~ 0
+RELAY
+$Comp
+L Device:Q_NMOS_GSD Q?
+U 1 1 5EB16D4F
+P 3300 3800
+AR Path="/5EB16D4F" Ref="Q?"  Part="1" 
+AR Path="/5EB107FD/5EB16D4F" Ref="Q1"  Part="1" 
+F 0 "Q1" H 3505 3846 50  0000 L CNN
+F 1 "DMG1012T-7" H 3505 3755 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-523" H 3500 3900 50  0001 C CNN
+F 3 "~" H 3300 3800 50  0001 C CNN
+	1    3300 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Global_Parts:CPC1002N U?
+U 1 1 5EB16D55
+P 3775 3025
+AR Path="/5EB16D55" Ref="U?"  Part="1" 
+AR Path="/5EB107FD/5EB16D55" Ref="U2"  Part="1" 
+F 0 "U2" H 3775 3150 50  0000 C CNN
+F 1 "CPC1002N" H 3775 3059 50  0000 C CNN
+F 2 "Package_SO:SOP-4_3.8x4.1mm_P2.54mm" H 3775 3025 50  0001 C CNN
+F 3 "" H 3775 3025 50  0001 C CNN
+	1    3775 3025
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4075 3125 4300 3125
+Wire Wire Line
+	4300 3125 4300 3175
+Wire Wire Line
+	4300 3175 4475 3175
+Wire Wire Line
+	4475 3275 4300 3275
+Wire Wire Line
+	4300 3275 4300 3325
+Wire Wire Line
+	4300 3325 4075 3325
+Wire Wire Line
+	3400 3325 3475 3325
+Text Notes 3550 3575 0    50   ~ 0
+2mA minimum LED current\n1.2V LED Vf
+Text Notes 3525 4150 0    50   ~ 0
+(3.3V-1.2V)/3mA = 700 ohms\n(3.3V-1.5V)/3mA = 600 ohms (worst case Vf)
+$Comp
+L Device:R R?
+U 1 1 5EB16D64
+P 3150 3125
+AR Path="/5EB16D64" Ref="R?"  Part="1" 
+AR Path="/5EB107FD/5EB16D64" Ref="R8"  Part="1" 
+F 0 "R8" V 3050 3125 50  0000 C CNN
+F 1 "649" V 3150 3125 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 3080 3125 50  0001 C CNN
+F 3 "~" H 3150 3125 50  0001 C CNN
+	1    3150 3125
+	0    1    1    0   
+$EndComp
+$Comp
+L FeatherWing_KC5-cache:+3.3V #PWR?
+U 1 1 5EB16D6A
+P 2800 2850
+AR Path="/5EB16D6A" Ref="#PWR?"  Part="1" 
+AR Path="/5EB107FD/5EB16D6A" Ref="#PWR013"  Part="1" 
+F 0 "#PWR013" H 2800 2700 50  0001 C CNN
+F 1 "+3.3V" H 2815 3023 50  0000 C CNN
+F 2 "" H 2800 2850 50  0001 C CNN
+F 3 "" H 2800 2850 50  0001 C CNN
+	1    2800 2850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2800 2850 2800 3125
+Wire Wire Line
+	2800 3125 3000 3125
+Wire Wire Line
+	3475 3125 3300 3125
+$Comp
+L power:GND #PWR?
+U 1 1 5EB16D73
+P 3400 4425
+AR Path="/5EB16D73" Ref="#PWR?"  Part="1" 
+AR Path="/5EB107FD/5EB16D73" Ref="#PWR014"  Part="1" 
+F 0 "#PWR014" H 3400 4175 50  0001 C CNN
+F 1 "GND" H 3405 4252 50  0000 C CNN
+F 2 "" H 3400 4425 50  0001 C CNN
+F 3 "" H 3400 4425 50  0001 C CNN
+	1    3400 4425
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5EB16D79
+P 3000 4100
+AR Path="/5EB16D79" Ref="R?"  Part="1" 
+AR Path="/5EB107FD/5EB16D79" Ref="R7"  Part="1" 
+F 0 "R7" H 2930 4054 50  0000 R CNN
+F 1 "10K" V 3000 4175 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 2930 4100 50  0001 C CNN
+F 3 "~" H 3000 4100 50  0001 C CNN
+	1    3000 4100
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3400 4000 3400 4350
+Wire Wire Line
+	3400 3325 3400 3600
+Wire Wire Line
+	3000 3950 3000 3800
+Wire Wire Line
+	3000 3800 3100 3800
+Wire Wire Line
+	3000 4250 3000 4350
+Wire Wire Line
+	3000 4350 3400 4350
+Connection ~ 3400 4350
+Wire Wire Line
+	3400 4350 3400 4425
+Text HLabel 2775 3800 0    50   Input ~ 0
+RELAY_CTRL1
+Wire Wire Line
+	2775 3800 3000 3800
+Connection ~ 3000 3800
+$Comp
+L conn:Conn_01x02 J?
+U 1 1 5EB1C919
+P 8975 3225
+AR Path="/5EB1C919" Ref="J?"  Part="1" 
+AR Path="/5EB107FD/5EB1C919" Ref="J7"  Part="1" 
+F 0 "J7" H 9055 3217 50  0000 L CNN
+F 1 "Conn_01x02" H 9055 3126 50  0000 L CNN
+F 2 "Connector_JST:JST_PH_S2B-PH-K_1x02_P2.00mm_Horizontal" H 8975 3225 50  0001 C CNN
+F 3 "~" H 8975 3225 50  0001 C CNN
+	1    8975 3225
+	1    0    0    -1  
+$EndComp
+Text Notes 8875 3050 0    50   ~ 0
+RELAY
+$Comp
+L Device:Q_NMOS_GSD Q?
+U 1 1 5EB1C920
+P 7600 3850
+AR Path="/5EB1C920" Ref="Q?"  Part="1" 
+AR Path="/5EB107FD/5EB1C920" Ref="Q2"  Part="1" 
+F 0 "Q2" H 7805 3896 50  0000 L CNN
+F 1 "DMG1012T-7" H 7805 3805 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-523" H 7800 3950 50  0001 C CNN
+F 3 "~" H 7600 3850 50  0001 C CNN
+	1    7600 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Global_Parts:CPC1002N U?
+U 1 1 5EB1C926
+P 8075 3075
+AR Path="/5EB1C926" Ref="U?"  Part="1" 
+AR Path="/5EB107FD/5EB1C926" Ref="U4"  Part="1" 
+F 0 "U4" H 8075 3200 50  0000 C CNN
+F 1 "CPC1002N" H 8075 3109 50  0000 C CNN
+F 2 "Package_SO:SOP-4_3.8x4.1mm_P2.54mm" H 8075 3075 50  0001 C CNN
+F 3 "" H 8075 3075 50  0001 C CNN
+	1    8075 3075
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8375 3175 8600 3175
+Wire Wire Line
+	8600 3175 8600 3225
+Wire Wire Line
+	8600 3225 8775 3225
+Wire Wire Line
+	8775 3325 8600 3325
+Wire Wire Line
+	8600 3325 8600 3375
+Wire Wire Line
+	8600 3375 8375 3375
+Wire Wire Line
+	7700 3375 7775 3375
+Text Notes 7850 3625 0    50   ~ 0
+2mA minimum LED current\n1.2V LED Vf
+Text Notes 7825 4200 0    50   ~ 0
+(3.3V-1.2V)/3mA = 700 ohms\n(3.3V-1.5V)/3mA = 600 ohms (worst case Vf)
+$Comp
+L Device:R R?
+U 1 1 5EB1C935
+P 7450 3175
+AR Path="/5EB1C935" Ref="R?"  Part="1" 
+AR Path="/5EB107FD/5EB1C935" Ref="R10"  Part="1" 
+F 0 "R10" V 7350 3175 50  0000 C CNN
+F 1 "649" V 7450 3175 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 7380 3175 50  0001 C CNN
+F 3 "~" H 7450 3175 50  0001 C CNN
+	1    7450 3175
+	0    1    1    0   
+$EndComp
+$Comp
+L FeatherWing_KC5-cache:+3.3V #PWR?
+U 1 1 5EB1C93B
+P 7100 2900
+AR Path="/5EB1C93B" Ref="#PWR?"  Part="1" 
+AR Path="/5EB107FD/5EB1C93B" Ref="#PWR015"  Part="1" 
+F 0 "#PWR015" H 7100 2750 50  0001 C CNN
+F 1 "+3.3V" H 7115 3073 50  0000 C CNN
+F 2 "" H 7100 2900 50  0001 C CNN
+F 3 "" H 7100 2900 50  0001 C CNN
+	1    7100 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7100 2900 7100 3175
+Wire Wire Line
+	7100 3175 7300 3175
+Wire Wire Line
+	7775 3175 7600 3175
+$Comp
+L power:GND #PWR?
+U 1 1 5EB1C944
+P 7700 4475
+AR Path="/5EB1C944" Ref="#PWR?"  Part="1" 
+AR Path="/5EB107FD/5EB1C944" Ref="#PWR016"  Part="1" 
+F 0 "#PWR016" H 7700 4225 50  0001 C CNN
+F 1 "GND" H 7705 4302 50  0000 C CNN
+F 2 "" H 7700 4475 50  0001 C CNN
+F 3 "" H 7700 4475 50  0001 C CNN
+	1    7700 4475
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5EB1C94A
+P 7300 4150
+AR Path="/5EB1C94A" Ref="R?"  Part="1" 
+AR Path="/5EB107FD/5EB1C94A" Ref="R9"  Part="1" 
+F 0 "R9" H 7230 4104 50  0000 R CNN
+F 1 "10K" V 7300 4225 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 7230 4150 50  0001 C CNN
+F 3 "~" H 7300 4150 50  0001 C CNN
+	1    7300 4150
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7700 4050 7700 4400
+Wire Wire Line
+	7700 3375 7700 3650
+Wire Wire Line
+	7300 4000 7300 3850
+Wire Wire Line
+	7300 3850 7400 3850
+Wire Wire Line
+	7300 4300 7300 4400
+Wire Wire Line
+	7300 4400 7700 4400
+Connection ~ 7700 4400
+Wire Wire Line
+	7700 4400 7700 4475
+Text HLabel 7075 3850 0    50   Input ~ 0
+RELAY_CTRL2
+Wire Wire Line
+	7075 3850 7300 3850
+Connection ~ 7300 3850
+Text Notes 3400 2525 0    50   ~ 0
+Relay Control Block 1
+Text Notes 7625 2475 0    50   ~ 0
+Relay Control Block 2
+$EndSCHEMATC
