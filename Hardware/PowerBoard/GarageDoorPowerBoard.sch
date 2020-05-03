@@ -1,0 +1,356 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Converter_ACDC:IRM-20-24 PS1
+U 1 1 5EAF115D
+P 4900 2825
+F 0 "PS1" H 4900 3150 50  0000 C CNN
+F 1 "IRM-20-24" H 4900 3059 50  0000 C CNN
+F 2 "Converter_ACDC:Converter_ACDC_MeanWell_IRM-20-xx_THT" H 4900 2525 50  0001 C CNN
+F 3 "http://www.meanwell.com/Upload/PDF/IRM-20/IRM-20-SPEC.PDF" H 5300 2475 50  0001 C CNN
+	1    4900 2825
+	1    0    0    -1  
+$EndComp
+$Comp
+L conn:Conn_01x02 J1
+U 1 1 5EAF2C18
+P 4050 2875
+F 0 "J1" H 4050 2675 50  0000 C CNN
+F 1 "1984617" V 4150 2825 50  0000 C CNN
+F 2 "Connector_Phoenix_MC:PhoenixContact_MCV_1,5_2-G-3.5_1x02_P3.50mm_Vertical" H 4050 2875 50  0001 C CNN
+F 3 "~" H 4050 2875 50  0001 C CNN
+	1    4050 2875
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4250 2775 4400 2775
+Wire Wire Line
+	4400 2775 4400 2725
+Wire Wire Line
+	4400 2725 4500 2725
+Wire Wire Line
+	4400 2925 4400 2875
+Wire Wire Line
+	4400 2875 4250 2875
+Wire Wire Line
+	4400 2925 4500 2925
+Text Notes 3900 3125 1    50   ~ 0
+Phoenix Contact
+$Comp
+L Connector:RJ45 J3
+U 1 1 5EAF7510
+P 7525 4650
+F 0 "J3" H 7195 4654 50  0000 R CNN
+F 1 "RJ45" H 7195 4745 50  0000 R CNN
+F 2 "" V 7525 4675 50  0001 C CNN
+F 3 "~" V 7525 4675 50  0001 C CNN
+	1    7525 4650
+	-1   0    0    1   
+$EndComp
+Text HLabel 6825 4550 0    50   Input ~ 0
+Relay_Output1
+Text HLabel 6825 4650 0    50   Input ~ 0
+Relay_Output2
+Text HLabel 6825 4750 0    50   Input ~ 0
+REED_SW2_IN
+Wire Wire Line
+	6825 4750 7125 4750
+Wire Wire Line
+	7125 4650 6825 4650
+Wire Wire Line
+	6825 4550 7125 4550
+Text HLabel 6825 4950 0    50   Input ~ 0
+REED_SW1_IN
+Text HLabel 6825 4850 0    50   Input ~ 0
+REED_SW2_GND
+Text HLabel 6825 5050 0    50   Input ~ 0
+REED_SW1_GND
+Wire Wire Line
+	6825 5050 7125 5050
+Wire Wire Line
+	7125 4950 6825 4950
+Wire Wire Line
+	6825 4850 7125 4850
+$Comp
+L power:+24V #PWR04
+U 1 1 5EAF9CE5
+P 6900 4250
+F 0 "#PWR04" H 6900 4100 50  0001 C CNN
+F 1 "+24V" H 6900 4400 50  0000 C CNN
+F 2 "" H 6900 4250 50  0001 C CNN
+F 3 "" H 6900 4250 50  0001 C CNN
+	1    6900 4250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6900 4250 6900 4350
+Wire Wire Line
+	6900 4350 7125 4350
+$Comp
+L power:GND #PWR05
+U 1 1 5EAFAD57
+P 7000 5175
+F 0 "#PWR05" H 7000 4925 50  0001 C CNN
+F 1 "GND" H 7005 5002 50  0000 C CNN
+F 2 "" H 7000 5175 50  0001 C CNN
+F 3 "" H 7000 5175 50  0001 C CNN
+	1    7000 5175
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7000 5175 7000 4450
+Wire Wire Line
+	7000 4450 7125 4450
+$Comp
+L power:+24V #PWR02
+U 1 1 5EAFB913
+P 6650 2575
+F 0 "#PWR02" H 6650 2425 50  0001 C CNN
+F 1 "+24V" H 6665 2748 50  0000 C CNN
+F 2 "" H 6650 2575 50  0001 C CNN
+F 3 "" H 6650 2575 50  0001 C CNN
+	1    6650 2575
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR01
+U 1 1 5EAFC00F
+P 5375 3050
+F 0 "#PWR01" H 5375 2800 50  0001 C CNN
+F 1 "GND" H 5380 2877 50  0000 C CNN
+F 2 "" H 5375 3050 50  0001 C CNN
+F 3 "" H 5375 3050 50  0001 C CNN
+	1    5375 3050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5300 2725 5675 2725
+Wire Wire Line
+	6650 2725 6650 2575
+Wire Wire Line
+	5300 2925 5375 2925
+Wire Wire Line
+	5375 2925 5375 3050
+$Comp
+L Device:C C1
+U 1 1 5EAFE1C3
+P 5675 2975
+F 0 "C1" H 5700 3075 50  0000 L CNN
+F 1 "22uF 50V" V 5550 2800 50  0000 L CNN
+F 2 "" H 5713 2825 50  0001 C CNN
+F 3 "~" H 5675 2975 50  0001 C CNN
+	1    5675 2975
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C2
+U 1 1 5EAFF350
+P 6000 2975
+F 0 "C2" H 6025 3075 50  0000 L CNN
+F 1 "22uF 50V" V 5875 2800 50  0000 L CNN
+F 2 "" H 6038 2825 50  0001 C CNN
+F 3 "~" H 6000 2975 50  0001 C CNN
+	1    6000 2975
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C3
+U 1 1 5EAFF7AE
+P 6325 2975
+F 0 "C3" H 6350 3075 50  0000 L CNN
+F 1 "22uF 50V" V 6200 2800 50  0000 L CNN
+F 2 "" H 6363 2825 50  0001 C CNN
+F 3 "~" H 6325 2975 50  0001 C CNN
+	1    6325 2975
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C4
+U 1 1 5EAFFB99
+P 6650 2975
+F 0 "C4" H 6675 3075 50  0000 L CNN
+F 1 "22uF 50V" V 6525 2800 50  0000 L CNN
+F 2 "" H 6688 2825 50  0001 C CNN
+F 3 "~" H 6650 2975 50  0001 C CNN
+	1    6650 2975
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR03
+U 1 1 5EB008A3
+P 6650 3275
+F 0 "#PWR03" H 6650 3025 50  0001 C CNN
+F 1 "GND" H 6655 3102 50  0000 C CNN
+F 2 "" H 6650 3275 50  0001 C CNN
+F 3 "" H 6650 3275 50  0001 C CNN
+	1    6650 3275
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6650 3125 6650 3200
+Wire Wire Line
+	6650 3200 6325 3200
+Wire Wire Line
+	5675 3200 5675 3125
+Connection ~ 6650 3200
+Wire Wire Line
+	6650 3200 6650 3275
+Wire Wire Line
+	6000 3125 6000 3200
+Connection ~ 6000 3200
+Wire Wire Line
+	6000 3200 5675 3200
+Wire Wire Line
+	6325 3200 6325 3125
+Connection ~ 6325 3200
+Wire Wire Line
+	6325 3200 6000 3200
+Wire Wire Line
+	6650 2825 6650 2725
+Connection ~ 6650 2725
+Wire Wire Line
+	6325 2825 6325 2725
+Connection ~ 6325 2725
+Wire Wire Line
+	6325 2725 6650 2725
+Wire Wire Line
+	6000 2725 6000 2825
+Connection ~ 6000 2725
+Wire Wire Line
+	6000 2725 6325 2725
+Wire Wire Line
+	5675 2825 5675 2725
+Connection ~ 5675 2725
+Wire Wire Line
+	5675 2725 6000 2725
+$Comp
+L conn:Conn_01x06 J2
+U 1 1 5EB12C73
+P 3800 4700
+F 0 "J2" H 3800 4300 50  0000 C CNN
+F 1 "Conn_01x06" V 3900 4700 50  0000 C CNN
+F 2 "" H 3800 4700 50  0001 C CNN
+F 3 "~" H 3800 4700 50  0001 C CNN
+	1    3800 4700
+	-1   0    0    1   
+$EndComp
+Text HLabel 4300 4400 2    50   Input ~ 0
+Relay_Output1
+Text HLabel 4300 4500 2    50   Input ~ 0
+Relay_Output2
+Text HLabel 4300 4600 2    50   Input ~ 0
+REED_SW2_IN
+Wire Wire Line
+	4300 4600 4000 4600
+Wire Wire Line
+	4000 4500 4300 4500
+Wire Wire Line
+	4300 4400 4000 4400
+Text HLabel 4300 4800 2    50   Input ~ 0
+REED_SW1_IN
+Text HLabel 4300 4700 2    50   Input ~ 0
+REED_SW2_GND
+Text HLabel 4300 4900 2    50   Input ~ 0
+REED_SW1_GND
+Wire Wire Line
+	4300 4900 4000 4900
+Wire Wire Line
+	4000 4800 4300 4800
+Wire Wire Line
+	4300 4700 4000 4700
+$Comp
+L power:+24V #PWR06
+U 1 1 5EB40F73
+P 7275 2575
+F 0 "#PWR06" H 7275 2425 50  0001 C CNN
+F 1 "+24V" H 7290 2748 50  0000 C CNN
+F 2 "" H 7275 2575 50  0001 C CNN
+F 3 "" H 7275 2575 50  0001 C CNN
+	1    7275 2575
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 5EB412D0
+P 7275 2775
+F 0 "R1" H 7345 2821 50  0000 L CNN
+F 1 "4.7K" V 7275 2675 50  0000 L CNN
+F 2 "" V 7205 2775 50  0001 C CNN
+F 3 "~" H 7275 2775 50  0001 C CNN
+	1    7275 2775
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D1
+U 1 1 5EB42294
+P 7275 3125
+F 0 "D1" V 7314 3007 50  0000 R CNN
+F 1 "LED" V 7223 3007 50  0000 R CNN
+F 2 "" H 7275 3125 50  0001 C CNN
+F 3 "~" H 7275 3125 50  0001 C CNN
+	1    7275 3125
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR07
+U 1 1 5EB4385B
+P 7275 3325
+F 0 "#PWR07" H 7275 3075 50  0001 C CNN
+F 1 "GND" H 7280 3152 50  0000 C CNN
+F 2 "" H 7275 3325 50  0001 C CNN
+F 3 "" H 7275 3325 50  0001 C CNN
+	1    7275 3325
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7275 3275 7275 3325
+Wire Wire Line
+	7275 2925 7275 2975
+Wire Wire Line
+	7275 2575 7275 2625
+Text Notes 7400 3275 0    50   ~ 0
+Green
+Wire Notes Line
+	3375 3675 8075 3675
+Wire Notes Line
+	8075 3675 8075 2150
+Wire Notes Line
+	8075 2150 3375 2150
+Wire Notes Line
+	3375 2150 3375 3675
+Text Notes 5350 2300 0    50   ~ 0
+120V AC/DC 24V Converter
+Wire Notes Line
+	8075 3775 8075 5425
+Wire Notes Line
+	8075 5425 6075 5425
+Wire Notes Line
+	6075 5425 6075 3775
+Wire Notes Line
+	6075 3775 8075 3775
+Wire Notes Line
+	5250 3775 5250 5425
+Wire Notes Line
+	5250 5425 3375 5425
+Wire Notes Line
+	3375 5425 3375 3775
+Wire Notes Line
+	3375 3775 5250 3775
+Text Notes 4025 3925 0    50   ~ 0
+Output Header
+Text Notes 6625 3925 0    50   ~ 0
+Power/Data Passthrough
+$EndSCHEMATC

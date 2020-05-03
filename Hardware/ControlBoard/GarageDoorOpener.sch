@@ -405,12 +405,12 @@ F 3 "~" H 1825 4825 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Global_Parts:CPC1002N UU3
+L Global_Parts:CPC1002N U3
 U 1 1 5EB006DB
 P 2300 4050
-AR Path="/5EB006DB" Ref="UU3"  Part="1" 
+AR Path="/5EB006DB" Ref="U3"  Part="1" 
 AR Path="/5EB107FD/5EB006DB" Ref="U?"  Part="1" 
-F 0 "UU3" H 2300 4175 50  0000 C CNN
+F 0 "U3" H 2300 4175 50  0000 C CNN
 F 1 "CPC1002N" H 2300 4084 50  0000 C CNN
 F 2 "Package_SO:SOP-4_3.8x4.1mm_P2.54mm" H 2300 4050 50  0001 C CNN
 F 3 "" H 2300 4050 50  0001 C CNN
@@ -1287,17 +1287,17 @@ F 3 "~" V 10250 2750 50  0001 C CNN
 	1    10250 2725
 	-1   0    0    1   
 $EndComp
-Text HLabel 9575 2825 0    50   Input ~ 0
+Text HLabel 9175 2825 0    50   Input ~ 0
 REED_SW2_IN
-Text HLabel 9575 2925 0    50   Input ~ 0
+Text HLabel 9175 2925 0    50   Input ~ 0
 REED_SW2_GND
-Text HLabel 9575 3025 0    50   Input ~ 0
+Text HLabel 9175 3025 0    50   Input ~ 0
 REED_SW1_IN
-Text HLabel 9575 3125 0    50   Input ~ 0
+Text HLabel 9175 3125 0    50   Input ~ 0
 REED_SW1_GND
-Text HLabel 9575 2625 0    50   Input ~ 0
+Text HLabel 9175 2625 0    50   Input ~ 0
 Relay_Ouput1
-Text HLabel 9575 2725 0    50   Input ~ 0
+Text HLabel 9175 2725 0    50   Input ~ 0
 Relay_Ouput2
 $Comp
 L power:+24V #PWR020
@@ -1342,17 +1342,17 @@ Wire Notes Line
 Wire Notes Line
 	8250 2100 10975 2100
 Wire Wire Line
-	9575 3125 9850 3125
+	9650 3125 9850 3125
 Wire Wire Line
-	9850 3025 9575 3025
+	9850 3025 9650 3025
 Wire Wire Line
-	9575 2925 9850 2925
+	9650 2925 9850 2925
 Wire Wire Line
-	9850 2825 9575 2825
+	9850 2825 9650 2825
 Wire Wire Line
-	9575 2725 9850 2725
+	9650 2725 9850 2725
 Wire Wire Line
-	9850 2625 9575 2625
+	9850 2625 9650 2625
 $Comp
 L Device:R R?
 U 1 1 5EAF8DE8
@@ -1376,4 +1376,82 @@ Wire Notes Line
 	6900 5925 6900 7725
 Text Notes 3050 7175 0    50   ~ 0
 24V to 5V@4A Buck Regulator
+Wire Wire Line
+	9350 2625 9175 2625
+Wire Wire Line
+	9350 2725 9175 2725
+Wire Wire Line
+	9350 2825 9175 2825
+Wire Wire Line
+	9350 2925 9175 2925
+Wire Wire Line
+	9350 3025 9175 3025
+$Comp
+L Device:R R21
+U 1 1 5EB42735
+P 9500 3125
+F 0 "R21" V 9550 2975 50  0000 C CNN
+F 1 "0" V 9500 3125 50  0000 C CNN
+F 2 "" V 9430 3125 50  0001 C CNN
+F 3 "~" H 9500 3125 50  0001 C CNN
+	1    9500 3125
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9350 3125 9175 3125
+$Comp
+L Device:R R20
+U 1 1 5EB4D6BA
+P 9500 3025
+F 0 "R20" V 9550 2875 50  0000 C CNN
+F 1 "0" V 9500 3025 50  0000 C CNN
+F 2 "" V 9430 3025 50  0001 C CNN
+F 3 "~" H 9500 3025 50  0001 C CNN
+	1    9500 3025
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R19
+U 1 1 5EB4D95E
+P 9500 2925
+F 0 "R19" V 9550 2775 50  0000 C CNN
+F 1 "0" V 9500 2925 50  0000 C CNN
+F 2 "" V 9430 2925 50  0001 C CNN
+F 3 "~" H 9500 2925 50  0001 C CNN
+	1    9500 2925
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R18
+U 1 1 5EB4DC76
+P 9500 2825
+F 0 "R18" V 9550 2675 50  0000 C CNN
+F 1 "0" V 9500 2825 50  0000 C CNN
+F 2 "" V 9430 2825 50  0001 C CNN
+F 3 "~" H 9500 2825 50  0001 C CNN
+	1    9500 2825
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R17
+U 1 1 5EB4DED5
+P 9500 2725
+F 0 "R17" V 9550 2575 50  0000 C CNN
+F 1 "0" V 9500 2725 50  0000 C CNN
+F 2 "" V 9430 2725 50  0001 C CNN
+F 3 "~" H 9500 2725 50  0001 C CNN
+	1    9500 2725
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R16
+U 1 1 5EB4E167
+P 9500 2625
+F 0 "R16" V 9550 2475 50  0000 C CNN
+F 1 "0" V 9500 2625 50  0000 C CNN
+F 2 "" V 9430 2625 50  0001 C CNN
+F 3 "~" H 9500 2625 50  0001 C CNN
+	1    9500 2625
+	0    1    1    0   
+$EndComp
 $EndSCHEMATC
