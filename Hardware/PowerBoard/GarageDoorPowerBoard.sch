@@ -323,19 +323,19 @@ Text Notes 5350 2300 0    50   ~ 0
 Wire Notes Line
 	8075 3775 8075 5425
 Wire Notes Line
-	8075 5425 6075 5425
+	8075 5425 6150 5425
 Wire Notes Line
-	6075 5425 6075 3775
+	6150 5425 6150 3775
 Wire Notes Line
-	6075 3775 8075 3775
+	6150 3775 8075 3775
 Wire Notes Line
-	5250 3775 5250 5425
+	5150 3775 5150 5425
 Wire Notes Line
-	5250 5425 3375 5425
+	5150 5425 3375 5425
 Wire Notes Line
 	3375 5425 3375 3775
 Wire Notes Line
-	3375 3775 5250 3775
+	3375 3775 5150 3775
 Text Notes 4025 3925 0    50   ~ 0
 Output Headers
 Text Notes 6625 3925 0    50   ~ 0
@@ -373,4 +373,56 @@ F 3 "~" H 3825 5075 50  0001 C CNN
 	1    3825 5075
 	-1   0    0    1   
 $EndComp
+$Comp
+L mechanical:MountingHole H1
+U 1 1 5EB4431A
+P 5375 4200
+F 0 "H1" H 5475 4246 50  0000 L CNN
+F 1 "MountingHole" H 5475 4155 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 5375 4200 50  0001 C CNN
+F 3 "~" H 5375 4200 50  0001 C CNN
+	1    5375 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L mechanical:MountingHole H2
+U 1 1 5EB44A92
+P 5375 4425
+F 0 "H2" H 5475 4471 50  0000 L CNN
+F 1 "MountingHole" H 5475 4380 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 5375 4425 50  0001 C CNN
+F 3 "~" H 5375 4425 50  0001 C CNN
+	1    5375 4425
+	1    0    0    -1  
+$EndComp
+$Comp
+L mechanical:MountingHole H3
+U 1 1 5EB44CBA
+P 5375 4650
+F 0 "H3" H 5475 4696 50  0000 L CNN
+F 1 "MountingHole" H 5475 4605 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 5375 4650 50  0001 C CNN
+F 3 "~" H 5375 4650 50  0001 C CNN
+	1    5375 4650
+	1    0    0    -1  
+$EndComp
+$Comp
+L mechanical:MountingHole H4
+U 1 1 5EB45056
+P 5375 4875
+F 0 "H4" H 5475 4921 50  0000 L CNN
+F 1 "MountingHole" H 5475 4830 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 5375 4875 50  0001 C CNN
+F 3 "~" H 5375 4875 50  0001 C CNN
+	1    5375 4875
+	1    0    0    -1  
+$EndComp
+Wire Notes Line
+	6075 3775 6075 5425
+Wire Notes Line
+	6075 5425 5225 5425
+Wire Notes Line
+	5225 5425 5225 3775
+Wire Notes Line
+	5225 3775 6075 3775
 $EndSCHEMATC
