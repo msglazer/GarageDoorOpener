@@ -515,9 +515,9 @@ Wire Wire Line
 Connection ~ 1525 4825
 Text Notes 1900 3650 0    50   ~ 0
 Relay Control Block 1
-Text HLabel 3000 4200 2    50   Input ~ 0
-Relay_Ouput1
 Text HLabel 3000 4300 2    50   Input ~ 0
+Relay_Ouput1
+Text HLabel 3000 4200 2    50   Input ~ 0
 Relay_Ouput2
 Text HLabel 5950 4625 2    50   Input ~ 0
 REED_SW1_IN
