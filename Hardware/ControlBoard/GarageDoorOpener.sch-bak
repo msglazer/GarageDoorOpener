@@ -40,12 +40,8 @@ Wire Wire Line
 Wire Wire Line
 	4025 1625 4125 1625
 NoConn ~ 6700 2550
-Text HLabel 6950 1750 2    50   Input ~ 0
-REED_SW1
 Wire Wire Line
 	6950 1750 6700 1750
-Text HLabel 6950 1850 2    50   Input ~ 0
-REED_SW2
 Wire Wire Line
 	6950 1850 6700 1850
 $Comp
@@ -119,7 +115,7 @@ Wire Notes Line
 Text Notes 4800 875  0    50   ~ 0
 Network Connected Microcontroller
 $Comp
-L FeatherWing_KC5-cache:+3.3V #PWR08
+L GarageDoorOpener-rescue:+3.3V-FeatherWing_KC5-cache #PWR08
 U 1 1 5EA9BBC7
 P 3775 1125
 F 0 "#PWR08" H 3775 975 50  0001 C CNN
@@ -312,34 +308,8 @@ Text Notes 5950 4475 0    50   ~ 0
 REED SW1
 Text Notes 5950 5100 0    50   ~ 0
 REED SW2
-Text HLabel 4950 4625 0    50   Input ~ 0
-REED_SW1
-Text HLabel 4950 5250 0    50   Input ~ 0
-REED_SW2
 Wire Wire Line
 	4950 4625 5150 4625
-$Comp
-L power:GND #PWR?
-U 1 1 5EAF8DC4
-P 5850 5475
-AR Path="/5EAD635B/5EAF8DC4" Ref="#PWR?"  Part="1" 
-AR Path="/5EAF8DC4" Ref="#PWR011"  Part="1" 
-F 0 "#PWR011" H 5850 5225 50  0001 C CNN
-F 1 "GND" H 5855 5302 50  0000 C CNN
-F 2 "" H 5850 5475 50  0001 C CNN
-F 3 "" H 5850 5475 50  0001 C CNN
-	1    5850 5475
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5850 5475 5850 5350
-Wire Wire Line
-	5850 5350 5950 5350
-Wire Wire Line
-	5950 4725 5850 4725
-Wire Wire Line
-	5850 4725 5850 5350
-Connection ~ 5850 5350
 $Comp
 L Device:R R?
 U 1 1 5EAF8DCF
@@ -364,7 +334,7 @@ Connection ~ 5150 4125
 Wire Wire Line
 	5150 4125 5150 4225
 $Comp
-L FeatherWing_KC5-cache:+3.3V #PWR?
+L GarageDoorOpener-rescue:+3.3V-FeatherWing_KC5-cache #PWR?
 U 1 1 5EAF8DDB
 P 5150 4075
 AR Path="/5EAD635B/5EAF8DDB" Ref="#PWR?"  Part="1" 
@@ -449,7 +419,7 @@ F 3 "~" H 1675 4150 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L FeatherWing_KC5-cache:+3.3V #PWR02
+L GarageDoorOpener-rescue:+3.3V-FeatherWing_KC5-cache #PWR02
 U 1 1 5EB006F0
 P 1325 3875
 AR Path="/5EB006F0" Ref="#PWR02"  Part="1" 
@@ -515,18 +485,14 @@ Wire Wire Line
 Connection ~ 1525 4825
 Text Notes 1900 3650 0    50   ~ 0
 Relay Control Block 1
-Text HLabel 3000 4200 2    50   Input ~ 0
-Relay_Ouput1
 Text HLabel 3000 4300 2    50   Input ~ 0
+Relay_Ouput1
+Text HLabel 3000 4200 2    50   Input ~ 0
 Relay_Ouput2
 Text HLabel 5950 4625 2    50   Input ~ 0
 REED_SW1_IN
 Text HLabel 5950 5250 2    50   Input ~ 0
 REED_SW2_IN
-Text HLabel 5950 4725 2    50   Input ~ 0
-REED_SW1_GND
-Text HLabel 5950 5350 2    50   Input ~ 0
-REED_SW2_GND
 Text HLabel 3850 2325 0    50   Input ~ 0
 LED_STRIP_CLK
 Wire Wire Line
@@ -708,7 +674,7 @@ Wire Wire Line
 Wire Wire Line
 	8950 4950 8450 4950
 $Comp
-L FeatherWing_KC5-cache:+3.3V #PWR017
+L GarageDoorOpener-rescue:+3.3V-FeatherWing_KC5-cache #PWR017
 U 1 1 5EB63A05
 P 8300 4100
 F 0 "#PWR017" H 8300 3950 50  0001 C CNN
@@ -841,7 +807,7 @@ F 3 "~" H 7525 4225 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L FeatherWing_KC5-cache:+3.3V #PWR015
+L GarageDoorOpener-rescue:+3.3V-FeatherWing_KC5-cache #PWR015
 U 1 1 5EBB2CD0
 P 7525 3975
 F 0 "#PWR015" H 7525 3825 50  0001 C CNN
@@ -1289,12 +1255,8 @@ F 3 "~" V 10250 2750 50  0001 C CNN
 $EndComp
 Text HLabel 9175 2825 0    50   Input ~ 0
 REED_SW2_IN
-Text HLabel 9175 2925 0    50   Input ~ 0
-REED_SW2_GND
-Text HLabel 9175 3025 0    50   Input ~ 0
+Text HLabel 8975 3025 0    50   Input ~ 0
 REED_SW1_IN
-Text HLabel 9175 3125 0    50   Input ~ 0
-REED_SW1_GND
 Text HLabel 9175 2625 0    50   Input ~ 0
 Relay_Ouput1
 Text HLabel 9175 2725 0    50   Input ~ 0
@@ -1383,9 +1345,7 @@ Wire Wire Line
 Wire Wire Line
 	9350 2825 9175 2825
 Wire Wire Line
-	9350 2925 9175 2925
-Wire Wire Line
-	9350 3025 9175 3025
+	9350 3025 8975 3025
 $Comp
 L Device:R R21
 U 1 1 5EB42735
@@ -1397,8 +1357,6 @@ F 3 "~" H 9500 3125 50  0001 C CNN
 	1    9500 3125
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	9350 3125 9175 3125
 $Comp
 L Device:R R20
 U 1 1 5EB4D6BA
@@ -1454,4 +1412,32 @@ F 3 "~" H 9500 2625 50  0001 C CNN
 	1    9500 2625
 	0    1    1    0   
 $EndComp
+Text HLabel 4950 4625 0    50   Input ~ 0
+REED_SW1_IN
+Text HLabel 6950 1750 2    50   Input ~ 0
+REED_SW1_IN
+Text HLabel 4950 5250 0    50   Input ~ 0
+REED_SW2_IN
+Text HLabel 6950 1850 2    50   Input ~ 0
+REED_SW2_IN
+$Comp
+L power:GND #PWR?
+U 1 1 5EBC021D
+P 9100 3250
+F 0 "#PWR?" H 9100 3000 50  0001 C CNN
+F 1 "GND" H 9105 3077 50  0000 C CNN
+F 2 "" H 9100 3250 50  0001 C CNN
+F 3 "" H 9100 3250 50  0001 C CNN
+	1    9100 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9100 3250 9100 3125
+Wire Wire Line
+	9100 2925 9350 2925
+Wire Wire Line
+	9100 3125 9350 3125
+Connection ~ 9100 3125
+Wire Wire Line
+	9100 3125 9100 2925
 $EndSCHEMATC

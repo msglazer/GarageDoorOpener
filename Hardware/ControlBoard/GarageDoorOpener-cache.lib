@@ -152,14 +152,13 @@ X ~ 2 0 -150 50 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# FeatherWing_KC5-cache_+3.3V
+# GarageDoorOpener-rescue_+3.3V-FeatherWing_KC5-cache
 #
-DEF FeatherWing_KC5-cache_+3.3V #PWR 0 0 Y Y 1 F P
+DEF GarageDoorOpener-rescue_+3.3V-FeatherWing_KC5-cache #PWR 0 0 Y Y 1 F P
 F0 "#PWR" 0 -150 50 H I C CNN
-F1 "FeatherWing_KC5-cache_+3.3V" 0 140 50 H V C CNN
+F1 "GarageDoorOpener-rescue_+3.3V-FeatherWing_KC5-cache" 0 140 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
-ALIAS +3.3V
 DRAW
 P 2 0 1 0 -30 50 0 100 N
 P 2 0 1 0 0 0 0 100 N
