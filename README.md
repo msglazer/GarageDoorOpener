@@ -11,7 +11,7 @@ Features:
 * RJ45 connector for cable to control board
 
 ### Control Board
-![image](https://user-images.githubusercontent.com/12124823/81517051-dcaa9b80-92f6-11ea-8108-2f051d08627d.png)
+![image](https://user-images.githubusercontent.com/12124823/81519670-46c73e80-92ff-11ea-81cb-c8aef1aca874.png)
 Features:
 * Particle Boron Microcontroller with cellular connectivity
 * 24V to 5W switching regulator
