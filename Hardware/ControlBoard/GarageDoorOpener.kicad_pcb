@@ -262,6 +262,11 @@
       (net 9 +24V))
     (pad 8 smd rect (at 1.4 -0.75 90) (size 0.6 0.25) (layers F.Cu F.Paste F.Mask)
       (net 9 +24V))
+    (model ${KISYS3DMOD}/Housings_DFN_QFN.3dshapes/QFN-12-1EP_3x3mm_Pitch0.5mm.step
+      (at (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
   )
 
   (module Capacitor_SMD:C_0603_1608Metric (layer F.Cu) (tedit 5B301BBE) (tstamp 5EB1277F)
@@ -683,6 +688,11 @@
       (net 1 GND))
     (pad 6 smd rect (at 0 1.6 270) (size 0.5 0.5) (layers F.Cu F.Paste F.Mask)
       (net 1 GND))
+    (model C:/Users/Matthew/Documents/GitHub/GarageDoorOpener/Hardware/Documentation/1--3DModel-STEP-56544.STEP
+      (offset (xyz 0 0 0.25))
+      (scale (xyz 1 1 1))
+      (rotate (xyz -90 0 -90))
+    )
   )
 
   (module Package_SO:SOP-4_3.8x4.1mm_P2.54mm (layer F.Cu) (tedit 5D9F72B1) (tstamp 5EB12A82)
@@ -1577,10 +1587,10 @@
       (net 2 +5V))
     (pad 1 smd rect (at -1.4 0 270) (size 1.2 3.9) (layers F.Cu F.Paste F.Mask)
       (net 11 "Net-(C7-Pad1)"))
-    (model ${KISYS3DMOD}/Inductors_SMD.3dshapes/L_Wuerth_MAPI-1610.step
-      (at (xyz 0 0 0))
-      (scale (xyz 2.5 2.5 2.5))
-      (rotate (xyz 0 0 0))
+    (model C:/Users/Matthew/Documents/GitHub/GarageDoorOpener/Hardware/Documentation/IND_TAIYO_NRS4018.step
+      (offset (xyz 0 0 1.75))
+      (scale (xyz 1 1 1))
+      (rotate (xyz -180 0 0))
     )
   )
 
@@ -1632,15 +1642,10 @@
       (net 9 +24V))
     (pad "" np_thru_hole circle (at -1.27 6.35 270) (size 3.2 3.2) (drill 3.2) (layers *.Cu *.Mask))
     (pad "" np_thru_hole circle (at 10.16 6.35 270) (size 3.2 3.2) (drill 3.2) (layers *.Cu *.Mask))
-    (model ${KISYS3DMOD}/Connector_RJ.3dshapes/RJ45_Amphenol_54602-x08_Horizontal.wrl
-      (at (xyz 0 0 0))
+    (model C:/Users/Matthew/Documents/GitHub/GarageDoorOpener/Hardware/Documentation/54602-908LFc.stp
+      (offset (xyz 4.5 3.75 10.5))
       (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 0))
-    )
-    (model ${KISYS3DMOD}/Connector_RJ.3dshapes/RJ45_Amphenol_RJHSE538X.step
-      (offset (xyz 7.5 -5.5 0.5))
-      (scale (xyz 0.9 1.1 0.9))
-      (rotate (xyz 0 0 -180))
+      (rotate (xyz -90 0 -90))
     )
   )
 
