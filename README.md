@@ -3,7 +3,7 @@ Garage door opener keyfob replacement that can detect door position and allows f
 
 ## Hardware:
 ### Power Board
-![image](https://user-images.githubusercontent.com/12124823/81516706-0d3e0580-92f6-11ea-87e5-a3412b9135c9.png)
+![image](https://user-images.githubusercontent.com/12124823/81518284-d1f20580-92fa-11ea-92b7-a72ddcb399ac.png)
 Features:
 * 120V AC/DC converter to 24V, 20W output
 * Two reed switch connectors 
